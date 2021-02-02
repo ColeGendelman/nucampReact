@@ -41,6 +41,7 @@ class Directory extends Component {
         const directory = this.state.campsites.map(campsite => {
             return (
                 <div className="col">
+                    <div key={campsite.id} className="col"></div>
                     <img src={campsite.image} alt={campsite.name} />
                     <h2>{campsite.name}</h2>
                     <p>{campsite.description}</p>
@@ -55,6 +56,7 @@ class Directory extends Component {
                 </div>
             </div>
         );
+}
 }
 
 export default Directory;
